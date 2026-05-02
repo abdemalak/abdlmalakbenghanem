@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript4</title>
+</head>
+<body>
+    <script>
+        let str = prompt("donne une phrase:"):str
+        alert ("reverse:"+ str.split("").reverse().join(""));
+
+        alert ("nombre de caractére :"+str.length);
+
+        function capitalize(str) {
+            return str
+    .split(" ")
+    .map(word => word.charAt(0).touppercase() + word.slice(1))
+    .join(" ");
+
+    function findmax(arr) {
+return Math.max(arr);
+}
+
+function findmin(arr) {
+return Math.min(arr);
+}
+
+function sumarray(arr) {
+return arr.reduce((sum, num) => sum + num, 0);
+}
+        
+function filter array (arr)
+return arr.filter (num==num >10);
+
+function factorial(n) {
+let result = 1;
+for (let i = 1; i <= n; i++) {
+    result *= i;
+}
+return result;
+}
+
+function isprime(n) {
+if (n <= 1) return false;
+for (let i = 2; i < n; i++) {
+    if (n % i === 0) return false;
+}
+return true;
+}
+
+function fibonacci(n) {
+let seq = [0, 1];
+for (let i = 2; i < n; i++) {
+    seq.push(seq[i - 1] + seq[i - 2]);
+}
+return seq;
+}
+
+console.log(reverseString("hello")); 
+console.log(countCharacters("abc")); 
+console.log(capitalizeWords("hello world"));
+
+console.log(findMax([1, 5, 2]));
+console.log(findMin([1, 5, 2]));
+console.log(sumArray([1, 2, 3]));
+console.log(filterArray([5, 12, 8, 20]));
+
+console.log(factorial(5));
+console.log(isPrime(7));
+console.log(fibonacci(6));
+
+
+    </script>
+    
+</body>
+</html>
